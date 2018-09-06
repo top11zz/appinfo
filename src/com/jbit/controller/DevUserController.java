@@ -43,6 +43,6 @@ public class DevUserController {
          model.addAttribute("statusList",dataDictionaryService.findAppStaus());
         model.addAttribute("flatFormList",dataDictionaryService.findAppFlatform());
         model.addAttribute("categoryLevel1List",appCategoryService.findAppList(0L));
-        return null;
+        return "jsp/developer/appinfolist";
     }
 }
